@@ -1,0 +1,43 @@
+/*for parallex scrolling*/
+
+body, html {
+    height: 100%;
+}
+
+/****************typography*/
+.maintitle{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 2em;
+    padding-top: 3em;
+    color: black;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("../sources/1.0-main.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*************transparent box for text*/
+div.transbox {
+/*    margin: 10%;*/
+    background-color: #ffffff;
+/*    border: 1px solid black;*/
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
