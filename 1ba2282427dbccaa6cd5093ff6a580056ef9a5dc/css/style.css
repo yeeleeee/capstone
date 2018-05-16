@@ -10,7 +10,11 @@ html{
 }
 body{
     padding: 3em;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    border: 10px solid tomato;
+
 }
 
 /*******menu*******/
@@ -26,6 +30,7 @@ li{
 }
 li:last-of-type {
     float: right;
+    margin-right: 0;
 }
 a{
     text-decoration: none;

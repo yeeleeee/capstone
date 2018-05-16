@@ -1,43 +1,78 @@
-/*for parallex scrolling*/
-
-body, html {
-    height: 100%;
+.container{
+    display: flex;
+    margin-top:15%;
+    overflow: hidden;
+    height: 60vw;
 }
 
-/****************typography*/
-.maintitle{
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 2em;
-    padding-top: 3em;
-    color: black;
-}
-
-.parallax { 
-    /* The image used */
-    background-image: url("../sources/1.0-main.jpg");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+#process{
+    background: 
+        linear-gradient(
+            rgba(0,0,0,0.1),
+            rgba(0,0,0,0.1)
+        ),
+        url(../sources/diagram.jpg);
     background-size: cover;
 }
 
-/*************transparent box for text*/
-div.transbox {
-/*    margin: 10%;*/
-    background-color: #ffffff;
-/*    border: 1px solid black;*/
-    opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
+
+
+#grouppic{
+/*
+    width: 70%;
+    height: 50%;
+*/
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.1),
+            rgba(0,0,0,0.1)
+        ),
+        url(../sources/Screen%20Shot%202018-05-07%20at%202.30.53%20PM.png);
+    background-size: cover;
 }
 
-div.transbox p {
-    margin: 5%;
-    font-weight: bold;
-    color: #000000;
+.left,.right{
+    width: 30%;
+    margin:auto;
+}
+
+.border{
+    padding: 1.5rem;
+    border: 1px solid tomato;
+}
+.box{
+    padding: 1.5rem;
+    background-color: tomato;
+}
+
+
+/*******typography**********/
+
+.main{   
+    font-size: 2em;
+    margin: auto;
+}
+
+.white{
+    color: #f6f7f8;
+}
+a:hover .button{
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 0.8rem;
+    }
 }
